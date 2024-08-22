@@ -5,12 +5,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Steps for configuration Jest
 
 1. Remover cualquier referencia de Jasmine / Karma en el package.json
-```
+```js
 npm remove @types/jasmine jasmine-core karma karma-chrome-launcher karma-coverage karma-jasmine karma-jasmine-html-reporter
 ```
 
 2. Instalar Jest
-```
+```js
 npm install --save-dev jest jest-preset-angular @types/jest
 ```
 
