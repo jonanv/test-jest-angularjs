@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. Remover cualquier referencia de Jasmine / Karma en el package.json
 ```
-npm remove <karma karma-chrome-launcher...>
+npm remove @types/jasmine jasmine-core karma karma-chrome-launcher karma-coverage karma-jasmine karma-jasmine-html-reporter
 ```
 
 2. Instalar Jest
