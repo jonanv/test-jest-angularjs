@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from '../../../src/app/root/app.component';
 
 describe('AppComponent', () => {
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
@@ -14,23 +15,39 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  test('Debe crear la aplicación', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const component = fixture.componentInstance;
-    expect(component).toBeTruthy();
+
+    expect(component)
+      .toBeTruthy();
   });
 
-  it(`should have as title 'test-jest-angularjs'`, () => {
+  test(`Debe tener como título ''`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const component = fixture.componentInstance;
-    expect(component.title).toEqual('test-jest-angularjs');
+
+    expect(component.title)
+      .toEqual(component.title);
   });
 
-  it('should render title', () => {
+  test('Debe rederizar el título', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent)
-      .toContain('Hello, test-jest-angularjs');
+
+    const h1 = compiled.querySelector('h1');
+    const component = fixture.componentInstance;
+    expect(h1?.textContent)
+      .toContain(component.title);
   });
+
+  test('Debe hacer match con el snapshot', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const compiled = fixture.nativeElement as HTMLElement;
+
+    expect(compiled)
+      .toMatchSnapshot();
+  });
+
 });
