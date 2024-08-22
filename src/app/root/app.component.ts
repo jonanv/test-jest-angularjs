@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'test-jest-angularjs';
+
+  public title = 'Angular testing with Jest';
+
 }
