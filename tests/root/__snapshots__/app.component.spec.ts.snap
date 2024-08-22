@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent Debe hacer match con el snapshot 1`] = `
+<div
+  id="root3"
+>
+  <div>
+    <h1>
+      Hello, Angular testing with Jest
+    </h1>
+    <p>
+      Congratulations! Your app is running. 🎉
+    </p>
+  </div>
+  <router-outlet />
+  
+</div>
+`;
