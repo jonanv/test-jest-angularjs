@@ -44,6 +44,7 @@ describe('AppComponent', () => {
 
   test('Debe hacer match con el snapshot', () => {
     const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
 
     expect(compiled)
