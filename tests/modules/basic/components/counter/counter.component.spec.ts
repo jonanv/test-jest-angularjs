@@ -17,7 +17,8 @@ describe('CounterComponent', () => {
     fixture.detectChanges();
   });
 
-  test('should create', () => {
-    expect(component).toBeTruthy();
+  test('Debe crearse el componente', () => {
+    expect(component)
+      .toBeTruthy();
   });
 });
