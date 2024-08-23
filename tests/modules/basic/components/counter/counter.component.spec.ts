@@ -35,4 +35,25 @@ describe('CounterComponent', () => {
       .toBe(5);
   });
 
+  test('Debe de incrementar y decrementar en 1 al presionar los botones', () => {
+    const buttons = compiled.querySelectorAll('button');
+    buttons[0].click();
+    expect(component.counter)
+      .toBe(1);
+
+    buttons[1].click();
+    buttons[1].click();
+    expect(component.counter)
+      .toBe(-1);
+  });
+
+  test('Cambiar el counter debe de actualizar la etiqueta h1', () => {
+    component.increaseBy(10);
+    fixture.detectChanges();
+
+    const h1 = compiled.querySelector('h1');
+    expect(h1?.textContent)
+      .toContain('10');
+  });
+
 });
