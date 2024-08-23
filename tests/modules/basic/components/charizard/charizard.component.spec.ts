@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CharizardComponent } from './charizard.component';
+import { CharizardComponent } from '../../../../../src/app/modules/basic/components/charizard/charizard.component';
 
 describe('CharizardComponent', () => {
   let component: CharizardComponent;
@@ -11,13 +11,14 @@ describe('CharizardComponent', () => {
       declarations: [CharizardComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(CharizardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  test('Debe crear el componente charizard', () => {
     expect(component).toBeTruthy();
   });
+
 });
