@@ -28,4 +28,11 @@ describe('CounterComponent', () => {
     expect(compiled)
       .toMatchSnapshot();
   });
+
+  test('Debe de incrementar basado en el argumento (5)', () => {
+    component.increaseBy(5);
+    expect(component.counter)
+      .toBe(5);
+  });
+
 });
