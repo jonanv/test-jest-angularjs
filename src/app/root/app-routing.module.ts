@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 // Components
 import { CounterComponent } from '../modules/basic/components/counter/counter.component';
 import { CharizardComponent } from '../modules/basic/components/charizard/charizard.component';
+import { FatherComponent } from '../modules/basic/components/father/father.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'basic/charizard',
     component: CharizardComponent
+  },
+  {
+    path: 'basic/father',
+    component: FatherComponent
   },
   {
     path: '**',
