@@ -1,1 +1,20 @@
-<p>father-son works!</p>
+<h5>Hijo</h5>
+<code>{{ client | json }}</code>
+
+<br><br>
+
+<div class="d-flex gap-2">
+  <button
+    *ngIf="client"
+    class="btn btn-primary"
+    (click)="onUpdateClient();">
+    Cambiar ID
+  </button>
+
+  <button
+    *ngIf="client"
+    class="btn btn-danger"
+    (click)="onDeleteClient();">
+    Borrar cliente
+  </button>
+</div>
