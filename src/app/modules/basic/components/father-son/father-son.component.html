@@ -7,14 +7,16 @@
   <button
     *ngIf="client"
     class="btn btn-primary"
-    (click)="onUpdateClient();">
+    (click)="onUpdateClient(5);"
+    data-test="btn-update-client">
     Cambiar ID
   </button>
 
   <button
     *ngIf="client"
     class="btn btn-danger"
-    (click)="onDeleteClient();">
+    (click)="onDeleteClient();"
+    data-test="btn-delete-client">
     Borrar cliente
   </button>
 </div>

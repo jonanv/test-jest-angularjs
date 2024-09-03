@@ -14,9 +14,9 @@ export class FatherSonComponent {
   @Output() public onDeleteClientEmitter: EventEmitter<undefined> = new EventEmitter<undefined>();
   @Output() public onUpdateClientEmitter: EventEmitter<Client> = new EventEmitter<Client>();
 
-  public onUpdateClient(): void {
+  public onUpdateClient(id: number): void {
     if (!this.client) return;
-    this.client = { ...this.client, id: Math.floor(Math.random() * 10) };
+    this.client = { ...this.client, id };
     this.onUpdateClientEmitter.emit(this.client);
   }
 
