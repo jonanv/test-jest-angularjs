@@ -38,6 +38,11 @@
     "setupFilesAfterEnv": [
       "<rootDir>/setup-jest.ts"
     ],
-    "globalSetup": "jest-preset-angular/global-setup"
+    "globalSetup": "jest-preset-angular/global-setup",
+    "moduleNameMapper": {
+      "^@app(.*)$": "<rootDir>/src/app/$1",
+      "^@test(.*)$": "<rootDir>/src/tests/$1",
+      "^@src(.*)$": "<rootDir>/src/$1"
+    }
   }
 }

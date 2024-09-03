@@ -2,6 +2,15 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    // "baseUrl": "./",
+    // "paths": {
+    //   "@app/*": ["src/app/*"],
+    //   "@root/*": ["src/app/root/*"],
+    //   "@basic/*": ["src/app/modules/basic/*"],
+    //   "@assets/*": ["src/assets/*"],
+    //   "@envs/*": ["src/environments/*"],
+    //   "@tests/*": ["src/tests/*"]
+    // },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
