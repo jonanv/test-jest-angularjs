@@ -6,8 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { CounterComponent } from './components/counter/counter.component';
 import { CharizardComponent } from './components/charizard/charizard.component';
 
-
-
 @NgModule({
   declarations: [
     CounterComponent,

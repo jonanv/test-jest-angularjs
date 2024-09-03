@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 // Imports
-import { environment } from '../../../../environments/environment.development';
+import { environment } from '../../../../environments/environment';
 import { map, Observable } from 'rxjs';
 
 // Interfaces
