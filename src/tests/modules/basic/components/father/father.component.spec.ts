@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FatherComponent } from './father.component';
+// Components
+import { FatherComponent } from '../../../../../app/modules/basic/components/father/father.component';
 
 describe('FatherComponent', () => {
   let component: FatherComponent;
@@ -11,13 +12,14 @@ describe('FatherComponent', () => {
       declarations: [FatherComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(FatherComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });
