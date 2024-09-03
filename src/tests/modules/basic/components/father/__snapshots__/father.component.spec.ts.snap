@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FatherComponent Debe de hacer match con el snapshot 1`] = `
+<div
+  id="root1"
+>
+  <h1>
+    Padre
+  </h1>
+  <button
+    class="btn btn-primary"
+    data-test="btn-set-client"
+  >
+     Cargar cliente
+
+  </button>
+  <br />
+  <br />
+  <code
+    class="mt-2"
+  >
+     
+
+  </code>
+  <hr />
+  <app-father-son>
+    <h5>
+      Hijo
+    </h5>
+    <code>
+      
+    </code>
+    <br />
+    <br />
+    <div
+      class="d-flex gap-2"
+    >
+      
+      
+    </div>
+  </app-father-son>
+</div>
+`;
+
+exports[`FatherComponent Debe de hacer match con el snapshot si hay cliente 1`] = `
+<div
+  id="root2"
+>
+  <h1>
+    Padre
+  </h1>
+  <button
+    class="btn btn-primary"
+    data-test="btn-set-client"
+  >
+     Cargar cliente
+
+  </button>
+  <br />
+  <br />
+  <code
+    class="mt-2"
+  >
+     {
+  "id": 1,
+  "name": "Juan"
+}
+
+  </code>
+  <hr />
+  <app-father-son>
+    <h5>
+      Hijo
+    </h5>
+    <code>
+      {
+  "id": 1,
+  "name": "Juan"
+}
+    </code>
+    <br />
+    <br />
+    <div
+      class="d-flex gap-2"
+    >
+      <button
+        class="btn btn-primary"
+        data-test="btn-update-client"
+      >
+         Cambiar ID 
+      </button>
+      
+      <button
+        class="btn btn-danger"
+        data-test="btn-delete-client"
+      >
+         Borrar cliente 
+      </button>
+      
+    </div>
+  </app-father-son>
+</div>
+`;
