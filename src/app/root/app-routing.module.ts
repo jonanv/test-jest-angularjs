@@ -5,11 +5,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { CounterComponent } from '../modules/basic/components/counter/counter.component';
 import { CharizardComponent } from '../modules/basic/components/charizard/charizard.component';
 import { FatherComponent } from '../modules/basic/components/father/father.component';
+import { CounterRouteComponent } from '../modules/basic/components/counter-route/counter-route.component';
 
 const routes: Routes = [
   {
     path: 'basic/counter',
     component: CounterComponent
+  },
+  {
+    path: 'basic/counter/:initial',
+    component: CounterRouteComponent
   },
   {
     path: 'basic/charizard',
