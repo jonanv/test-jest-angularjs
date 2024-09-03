@@ -2,10 +2,10 @@ import { TestBed } from '@angular/core/testing';
 import { HttpClientModule } from '@angular/common/http';
 
 // Services
-import { PokemonService } from '../../../../src/app/modules/basic/services/pokemon.service';
+import { PokemonService } from '../../../../app/modules/basic/services/pokemon.service';
 
 // Interfaces
-import { Pokemon } from '../../../../src/app/modules/basic/interfaces/pokemon.interface';
+import { Pokemon } from '../../../../app/modules/basic/interfaces/pokemon.interface';
 
 describe('PokemonService', () => {
   let service: PokemonService;

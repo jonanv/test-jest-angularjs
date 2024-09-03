@@ -2,10 +2,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 // Services
-import { PokemonService } from '../../../../../src/app/modules/basic/services/pokemon.service';
+import { PokemonService } from '../../../../../app/modules/basic/services/pokemon.service';
 
 // Components
-import { CharizardComponent } from '../../../../../src/app/modules/basic/components/charizard/charizard.component';
+import { CharizardComponent } from '../../../../../app/modules/basic/components/charizard/charizard.component';
+
 
 describe('CharizardComponent', () => {
   let component: CharizardComponent;

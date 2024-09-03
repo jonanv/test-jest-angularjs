@@ -1,6 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from '../../src/app/root/app.component';
+
+// Components
+import { AppComponent } from '../../app/root/app.component';
 
 describe('AppComponent', () => {
 
